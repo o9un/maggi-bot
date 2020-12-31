@@ -38,8 +38,10 @@ async def on_message(message):
 async def on_message(message):
     if message.content.startswith("매기야 투표"):
         vote = message.content[4:].split("/")
-        chooose = await clien.send_message(message.channel, vote=[]   
-        await client.add_reaction(choose, '👍')
+        await client.send_message(message.channel, vote[0])
+        for i in range(1, len(vote)):
+            choose = await client.send_message(message.channel, vote[i])
+            await client.add_reaction(choose, '👍')
 
 
 access_token os.inviron["BOT_TOKKEN"]
