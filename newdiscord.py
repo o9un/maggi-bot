@@ -1,4 +1,6 @@
 import discord
+import os
+
 
 client = discord.Client()
 
@@ -40,4 +42,5 @@ async def on_message(message):
         await client.add_reaction(choose, '👍')
 
 
-client.run("Nzk0MDU4MzE4MjcxMjE3Njk1.X-1Sbw.lgH_xM9S9IvU_X1DAahD5-Y53Yo")
+access_token os.inviron["BOT_TOKKEN"]
+client.run(acess_token)
