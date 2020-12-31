@@ -1,5 +1,4 @@
 import discord
-import os
 
 
 client = discord.Client()
@@ -11,8 +10,6 @@ async def on_ready():
     print("ready")
     game = discord.Game("Minecraft")
     await client.change_presence(status=discord.Status.online, activity=game)
-
-
 
 @client.event
 async def on_message(message):
