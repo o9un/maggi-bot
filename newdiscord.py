@@ -41,5 +41,4 @@ async def on_message(message):
             await client.add_reaction(choose, '👍')
 
 
-access_token os.inviron["BOT_TOKKEN"]
-client.run(acess_token)
+client.run("Nzk0MDU4MzE4MjcxMjE3Njk1.X-1Sbw.erxZBOx_6G_gTKbhJNjvgd5cTRs")
